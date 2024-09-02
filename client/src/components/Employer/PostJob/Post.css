@@ -1,0 +1,77 @@
+.post {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  height: 100vh;
+  gap: 100px;
+}
+
+.createjobs button {
+  width: 85px;
+  color: whitesmoke;
+  height: 32px;
+  border-radius: 6px;
+  font-size: 10px;
+  font-weight: 600;
+  background-color: #0d7794;
+}
+.createjobs {
+  width: 50%;
+  box-shadow: 5px 5px 8px 2px rgb(203, 228, 236);
+  color: #4f6d7a;
+  padding: 20px 10px 25px 50px;
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.raster .in-out {
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  /* align-items: center; */
+}
+#sucmsg {
+  color: #0d7794;
+  margin: 5px;
+}
+@media (max-width: 1400px) {
+  .createjobs {
+    width: 80%;
+  }
+}
+@media (max-width: 900px) {
+  .createjobs {
+    width: 96%;
+  }
+  .raster .in-out .input input {
+    width: 210px;
+    height: 30px;
+  }
+  .raster .in-out {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .createjobs {
+    width: 80%;
+  }
+}
+@media (max-width: 650px) {
+ 
+  .createjobs {
+    width: 95%;
+    padding: 5px;
+  }
+ 
+  .raster .in-out .input input {
+    width: 160px;
+    height: 30px;
+  }
+}
+

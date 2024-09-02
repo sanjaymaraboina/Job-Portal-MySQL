@@ -1,0 +1,162 @@
+.job-card-horizontal {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  background-color: #f9f9f950;
+  max-width: 1000px;
+  margin: 20px auto;
+  box-shadow: 5px 5px 8px 2px rgb(203, 228, 236);
+  color: #4f6d7a;
+}
+.job-card-horizontal {
+  width: 90%;
+}
+
+.job-title {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.job-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media(max-width:600px){
+  .job-content {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 25px;
+  }
+  
+}
+.job-info-horizontal {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  flex-grow: 1;
+}
+@media(max-width:600px){
+  .job-info-horizontal {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 10px;
+    flex-grow: 1;
+  }
+  
+}
+
+.job-detail-horizontal {
+  display: flex;
+  flex-direction: column;
+}
+
+.job-detail-horizontal label {
+  font-weight: bold;
+  color: #4f6d7a;
+  margin-bottom: 5px;
+}
+
+.job-detail-horizontal p {
+  margin: 0;
+  color: #4f6d7a;
+}
+
+.job-buttons-horizontal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  margin-left: 20px;
+  gap: 25px;
+}
+
+.edit-btn,
+.delete-btn {
+  background-color: #4a79ab;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  transition: background-color 0.3s ease;
+  width: 100px;
+}
+
+.delete-btn {
+  background-color: #dc3545;
+}
+
+.edit-btn:hover,
+.delete-btn:hover {
+  background-color: #4f83bb;
+}
+
+.delete-btn:hover {
+  background-color: #c82333;
+}
+.content h1 {
+  text-align: center;
+  margin: 25px;
+}
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.buttons button {
+  width: 85px;
+  color: whitesmoke;
+  height: 32px;
+  border-radius: 6px;
+  font-size: 10px;
+  font-weight: 600;
+  background-color: #0d7794;
+  margin-top: 15px;
+}
+.buttons {
+  display: flex;
+  gap: 15px;
+}
+.edit-form-container.edit-form-active {
+  box-shadow: 5px 5px 8px 2px rgb(203, 228, 236);
+  width: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+}
+
+
+@media(max-width:600px){
+  .job-buttons-horizontal {
+    margin-left: 0px;
+    flex-direction: row;
+   align-items: center;
+   justify-content: flex-start;
+    gap: 35px;
+  }
+  .job-card-horizontal {
+    width: 100%;
+  }
+  .edit-btn,
+.delete-btn {
+ 
+  width: 85px;
+  font-size: 10px;
+}
+.edit-form-container.edit-form-active {
+  width: 360px;
+margin: auto; 
+}
+  
+}
